@@ -8,8 +8,9 @@ import (
 
 func main() {
 	start := time.Now()
-	fmt.Println(num.IsPrime(13356225666))
+
+	num.Seive(2023)
 	duration := time.Since(start)
 
-	fmt.Println(duration.Seconds())
+	fmt.Println("Execution time: ", duration.Milliseconds())
 }
